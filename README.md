@@ -11,7 +11,11 @@ Since credit risk is an inherently unbalanced classification model, we are using
 3. Use combinatorial approach of over- and undersampling using the **SMOTEENN** algorithm
 4. Compare two new machine learning models that reduce bias. I.e.,  **BalancedRandomForestClassifier** and **EasyEnsembleClassifier**
 
+**Data Source:** [LoanStats_2019Q1.csv](./Resources/LoanStats_2019Q1.csv)
 
+**Libraries Used:** imbalanced-learn, scikit-learn
+
+**Programming Languages:** Python 3.7.6
 
 
 ## Results
@@ -91,3 +95,17 @@ Since credit risk is an inherently unbalanced classification model, we are using
 * **Imbalanced Classification Report:**
 
     ![adaboost_cr](./Resources/adaboost_cr.PNG)
+
+
+## Summary
+
+* The Precision value for Low Risk is 1.00 for all the models
+* The Balanced Accuracy Score for Random Oversampling and SMOTE models are almost the same. 
+* The Balanced Accuracy Score decreased for ClusterCentroids Undersampling, but improved slighty over the previous two for SMOTEENN Combination Sampling.
+* The Balanced Accuracy Scores for Balanced Random Forest and Easy Ensemble AdaBoost Classifier models are better than four resampling models.
+* SMOTE model has lowest, and Combination for highest Recall value for High Risk out of four resampling methods.
+* The ensemble methods have better Recall values than resampling methods for both High Risk and Low Risk.
+
+### Recommeded Methods
+
+I would recommend **Easy Ensemble AdaBoost Classifier** for predictinig the credit risk in this case because it has a Balanced Accuracy Score of 0.9316600714093861. Also, it has high Recall values. I.e., 0.92 for High Risk and 0.94 for Low Risk.
