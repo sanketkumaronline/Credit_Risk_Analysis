@@ -1,5 +1,18 @@
 # Credit Risk Analysis
 
+## Overview
+
+FastLending, a peer-to-peer lending services company wants to use machine learning to predict credit risk. They believe using machine learning will result in a more quicker and reliable loan experience. Moreover, it will lead to more accurate prediction of good candidates for loans, leading to lower default rates. I am helping their lead data scientist in building and evaluating several machine learning models to predict credit risk. 
+
+Since credit risk is an inherently unbalanced classification model, we are using using **imbalanced-learn** and **scikit-learn** libraries to build and evaluate models using resampling. Using credit card dataset from LendingClub, a peer-to-peer lending services company, we are:
+
+1. Oversample the data using the **RandomOverSampler** and **SMOTE** algorithms
+2. Undersample the data using the **ClusterCentroids** algorithm 
+3. Use combinatorial approach of over- and undersampling using the **SMOTEENN** algorithm
+4. Compare two new machine learning models that reduce bias. I.e.,  **BalancedRandomForestClassifier** and **EasyEnsembleClassifier**
+
+
+
 
 ## Results
 
@@ -10,10 +23,10 @@
 * **f1 Score:** 0.02 for High Risk and 0.73 for Low Risk
 * **Confusion Matrix:** 
 
-    ![randomoversampling_cm](./Images/randomoversampling_cm.PNG)
+    ![randomoversampling_cm](./Resources/randomoversampling_cm.PNG)
 * **Imbalanced Classification Report:**
 
-    ![randomoversampling_cr](./Images/randomoversampling_cr.PNG)
+    ![randomoversampling_cr](./Resources/randomoversampling_cr.PNG)
 
 ### 2. Details for SMOTE Oversampling
 * **Balanced Accuracy Score:** 0.6537310478007576
@@ -22,10 +35,10 @@
 * **f1 Score:** 0.02 for High Risk and 0.81 for Low Risk
 * **Confusion Matrix:** 
 
-    ![smote_cm](./Images/smote_cm.PNG)
+    ![smote_cm](./Resources/smote_cm.PNG)
 * **Imbalanced Classification Report:**
 
-    ![smote_cr](./Images/smote_cr.PNG)
+    ![smote_cr](./Resources/smote_cr.PNG)
 
 
 ### 3. Details for ClusterCentroids Undersampling
@@ -35,10 +48,10 @@
 * **f1 Score:** 0.01 for High Risk and 0.57 for Low Risk
 * **Confusion Matrix:** 
 
-    ![clustercentroid_cm](./Images/clustercentroid_cm.PNG)
+    ![clustercentroid_cm](./Resources/clustercentroid_cm.PNG)
 * **Imbalanced Classification Report:**
 
-    ![clustercentroid_cr](./Images/clustercentroid_cr.PNG)
+    ![clustercentroid_cr](./Resources/clustercentroid_cr.PNG)
 
 
 ### 4. Details for SMOTEENN Combination Sampling
@@ -48,10 +61,10 @@
 * **f1 Score:** 0.02 for High Risk and 0.74 for Low Risk
 * **Confusion Matrix:** 
 
-    ![smoteenn_cm](./Images/smoteenn_cm.PNG)
+    ![smoteenn_cm](./Resources/smoteenn_cm.PNG)
 * **Imbalanced Classification Report:**
 
-    ![smoteenn_cr](./Images/smoteenn_cr.PNG)
+    ![smoteenn_cr](./Resources/smoteenn_cr.PNG)
 
 
 ### 5. Details for Balanced Random Forest Classifier
@@ -61,10 +74,10 @@
 * **f1 Score:** 0.06 for High Risk and 0.93 for Low Risk
 * **Confusion Matrix:** 
 
-    ![balancedrandomforest_cm](./Images/balancedrandomforest_cm.PNG)
+    ![balancedrandomforest_cm](./Resources/balancedrandomforest_cm.PNG)
 * **Imbalanced Classification Report:**
 
-    ![balancedrandomforest_cr](./Images/balancedrandomforest_cr.PNG)
+    ![balancedrandomforest_cr](./Resources/balancedrandomforest_cr.PNG)
 
 
 ### 6. Details for Easy Ensemble AdaBoost Classifier
@@ -74,7 +87,7 @@
 * **f1 Score:** 0.16 for High Risk and 0.97 for Low Risk
 * **Confusion Matrix:** 
 
-    ![adaboost_cm](./Images/adaboost_cm.PNG)
+    ![adaboost_cm](./Resources/adaboost_cm.PNG)
 * **Imbalanced Classification Report:**
 
-    ![adaboost_cr](./Images/adaboost_cr.PNG)
+    ![adaboost_cr](./Resources/adaboost_cr.PNG)
