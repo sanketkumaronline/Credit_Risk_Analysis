@@ -24,7 +24,7 @@ Since credit risk is an inherently unbalanced classification model, we are using
 * **Balanced Accuracy Score:** 0.6603423204808787
 * **Precision:** 0.01 for High Risk and 1.00 for Low Risk
 * **Recall:** 0.74 for High Risk and 0.58 for Low Risk
-* **f1 Score:** 0.02 for High Risk and 0.73 for Low Risk
+* **F1 Score:** 0.02 for High Risk and 0.73 for Low Risk
 * **Confusion Matrix:** 
 
     ![randomoversampling_cm](./Resources/randomoversampling_cm.PNG)
@@ -36,66 +36,66 @@ Since credit risk is an inherently unbalanced classification model, we are using
 * **Balanced Accuracy Score:** 0.6537310478007576
 * **Precision:** 0.01 for High Risk and 1.00 for Low Risk
 * **Recall:** 0.62 for High Risk and 0.68 for Low Risk
-* **f1 Score:** 0.02 for High Risk and 0.81 for Low Risk
+* **F1 Score:** 0.02 for High Risk and 0.81 for Low Risk
 * **Confusion Matrix:** 
 
     ![smote_cm](./Resources/smote_cm.PNG)
 * **Imbalanced Classification Report:**
 
     ![smote_cr](./Resources/smote_cr.PNG)
-
+* The Balanced Accuracy Score is almost same as previous model. The Recall value for High Risk has dropped, but increased for Low Risk.
 
 ### 3. Details for ClusterCentroids Undersampling
 * **Balanced Accuracy Score:** 0.5439153831192286
 * **Precision:** 0.01 for High Risk and 1.00 for Low Risk
 * **Recall:** 0.69 for High Risk and 0.39 for Low Risk
-* **f1 Score:** 0.01 for High Risk and 0.57 for Low Risk
+* **F1 Score:** 0.01 for High Risk and 0.57 for Low Risk
 * **Confusion Matrix:** 
 
     ![clustercentroid_cm](./Resources/clustercentroid_cm.PNG)
 * **Imbalanced Classification Report:**
 
     ![clustercentroid_cr](./Resources/clustercentroid_cr.PNG)
-
+* The Balanced Accuracy Score is less than previous two oversampling model. The Recall value for Low Risk is also considerably low.
 
 ### 4. Details for SMOTEENN Combination Sampling
 * **Balanced Accuracy Score:** 0.6808065277996462
 * **Precision:** 0.01 for High Risk and 1.00 for Low Risk
 * **Recall:** 0.77 for High Risk and 0.59 for Low Risk
-* **f1 Score:** 0.02 for High Risk and 0.74 for Low Risk
+* **F1 Score:** 0.02 for High Risk and 0.74 for Low Risk
 * **Confusion Matrix:** 
 
     ![smoteenn_cm](./Resources/smoteenn_cm.PNG)
 * **Imbalanced Classification Report:**
 
     ![smoteenn_cr](./Resources/smoteenn_cr.PNG)
-
+* The Balanced Accuracy Score is better than all previous resampling models. The Recall value for High Risk has also improved.
 
 ### 5. Details for Balanced Random Forest Classifier
 * **Balanced Accuracy Score:** 0.7885466545953005
 * **Precision:** 0.03 for High Risk and 1.00 for Low Risk
 * **Recall:** 0.70 for High Risk and 0.87 for Low Risk
-* **f1 Score:** 0.06 for High Risk and 0.93 for Low Risk
+* **F1 Score:** 0.06 for High Risk and 0.93 for Low Risk
 * **Confusion Matrix:** 
 
     ![balancedrandomforest_cm](./Resources/balancedrandomforest_cm.PNG)
 * **Imbalanced Classification Report:**
 
     ![balancedrandomforest_cr](./Resources/balancedrandomforest_cr.PNG)
-
+* The Balanced Accuracy Score is better than all previous resampling models. The Recall value for High Risk has also improved.
 
 ### 6. Details for Easy Ensemble AdaBoost Classifier
 * **Balanced Accuracy Score:** 0.9316600714093861
 * **Precision:** 0.09 for High Risk and 1.00 for Low Risk
 * **Recall:** 0.92 for High Risk and 0.94 for Low Risk
-* **f1 Score:** 0.16 for High Risk and 0.97 for Low Risk
+* **F1 Score:** 0.16 for High Risk and 0.97 for Low Risk
 * **Confusion Matrix:** 
 
     ![adaboost_cm](./Resources/adaboost_cm.PNG)
 * **Imbalanced Classification Report:**
 
     ![adaboost_cr](./Resources/adaboost_cr.PNG)
-
+* This model is considerably bette than others in terms of Balanced Accuracy Score, Recall for High Risk and Low Risk, and F1 Score for Low Risk.
 
 ## Summary
 
