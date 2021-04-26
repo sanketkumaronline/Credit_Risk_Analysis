@@ -82,7 +82,7 @@ Since credit risk is an inherently unbalanced classification model, we are using
 * **Imbalanced Classification Report:**
 
     ![balancedrandomforest_cr](./Resources/balancedrandomforest_cr.PNG)
-* The Balanced Accuracy Score is better than all previous resampling models. The Recall value for High Risk has also improved.
+* The Balanced Accuracy Score is better than all previous resampling models. The Recall value for High Risk is good but highest for Low Risk as compared to previous models.
 
 ### 6. Details for Easy Ensemble AdaBoost Classifier
 * **Balanced Accuracy Score:** 0.9316600714093861
