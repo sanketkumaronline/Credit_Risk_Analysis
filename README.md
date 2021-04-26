@@ -106,6 +106,6 @@ Since credit risk is an inherently unbalanced classification model, we are using
 * SMOTE model has lowest, and Combination for highest Recall value for High Risk out of four resampling methods.
 * The ensemble methods have better Recall values than resampling methods for both High Risk and Low Risk.
 
-### Recommeded Methods
+### Recommeded Method
 
 I would recommend **Easy Ensemble AdaBoost Classifier** for predictinig the credit risk in this case because it has a high Balanced Accuracy Score of 0.9316600714093861. Also, it has high Recall values. I.e., 0.92 for High Risk and 0.94 for Low Risk.
